@@ -6,13 +6,14 @@ import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 
 function BiletyKomponent() {
+
     return(
         <Container className={"main"} fluid>
             <Row>
                 <Col md={9}>
                     <Stack gap={4}>
                         {bilety.map((bilety, index) => (
-                            <Bilet key={index} img={bilety.img} tytul={bilety.tytul} tresc={bilety.tytul} data={bilety.data} opis={bilety.opis} placeholder={1 ? <KupBilet/> : "Ilosc biletow: 1"} />
+                            <Bilet key={index} img={bilety.img} tytul={bilety.tytul} tresc={bilety.tytul} data={bilety.data} opis={bilety.opis} placeholder={<KupBilet/>} />
                         ))}
                     </Stack>
                 </Col>

@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import {useEffect, useState} from "react";
 import opinie from "/src/data/opinieData.js"
 import Bilet from "../components/Bilet.jsx";
+import KupBilet from "../components/KupBilet.jsx";
 
 
 function StartKomponent(){
@@ -17,7 +18,7 @@ function StartKomponent(){
 
 
     return (
-        <Container className={"main"}>
+        <Container className={"main"} fluid>
             <Row>
                 <Col md={9}>
                     <Stack gap={5}>
@@ -35,16 +36,17 @@ function StartKomponent(){
                                 </Carousel.Item>
                             ))}
                         </Carousel>
-
+                        <div className={"najblizszy-koncert"}>
+                        <h4 style={{marginLeft: '40%'}}>Najblizszy koncert:</h4>
                         <div className={"bilet-group"}>
-                            <h4 style={{marginLeft: '40%'}}>Najblizszy koncert:</h4>
                             <Bilet
                                 img={"/src/img/thumbnail_1.png"}
-                                tytul={"Nazwa koncertu"}
-                                data={"Data koncertu"}
-                                opis={"Opis koncertu"}
+                                tytul={"MIKU FANTASY"}
+                                data={"15 marca 2024, Tokyo Dome"}
+                                opis={"Przygotuj się na podróż do magicznego świata fantazji z niezapomnianym występem Hatsune Miku, pełnym kolorowych wizji i energetycznej muzyki!"}
                                 placeholder={"Ilosc biletow: 1"}
                             />
+                        </div>
                         </div>
                     </Stack>
                 </Col>

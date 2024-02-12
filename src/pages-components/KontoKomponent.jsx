@@ -15,16 +15,16 @@ function KontoKomponent() {
     };
 
     return (
-        <Container className={"main"}>
+        <Container className={"main"} fluid>
             <Row>
                 <Col md={9}>
                     <div className={"moje-bilety"}>
                         <h3>Moje bilety:</h3>
                         <Bilet
                             img={"/src/img/thumbnail_1.png"}
-                            tytul={"Nazwa koncertu"}
-                            data={"Data koncertu"}
-                            opis={"Opis koncertu"}
+                            tytul={"MIKU FANTASY"}
+                            data={"15 marca 2024, Tokyo Dome"}
+                            opis={"Przygotuj się na podróż do magicznego świata fantazji z niezapomnianym występem Hatsune Miku, pełnym kolorowych wizji i energetycznej muzyki!"}
                             placeholder={"Ilosc biletow: 1"}
                         />
                     </div><br/>

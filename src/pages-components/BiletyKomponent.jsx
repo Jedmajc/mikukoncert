@@ -4,8 +4,12 @@ import Bilet from "../components/Bilet.jsx";
 import KupBilet from "../components/KupBilet.jsx";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import {useState} from "react";
+import {set} from "react-hook-form";
 
 function BiletyKomponent() {
+
+    const [currenBiletId, setCurrentBiletId] = useState(null)
 
     return(
         <Container className={"main"} fluid>
@@ -13,7 +17,7 @@ function BiletyKomponent() {
                 <Col md={9}>
                     <Stack gap={4}>
                         {bilety.map((bilety, index) => (
-                            <Bilet key={index} img={bilety.img} tytul={bilety.tytul} tresc={bilety.tytul} data={bilety.data} opis={bilety.opis} placeholder={<KupBilet/>} />
+                            <Bilet key={index} img={bilety.img} tytul={bilety.tytul} tresc={bilety.tytul} data={bilety.data} opis={bilety.opis} placeholder={<KupBilet handleClick={() => setCurrentBiletId(bilety.id)}/>} />
                         ))}
                     </Stack>
                 </Col>

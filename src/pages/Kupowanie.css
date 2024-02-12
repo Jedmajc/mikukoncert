@@ -1,0 +1,11 @@
+.koncert-img {
+    height: 200px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.kupowanie-main {
+    background-color: #86cecb;
+    padding: 8px;
+    border-radius: 50px;
+}

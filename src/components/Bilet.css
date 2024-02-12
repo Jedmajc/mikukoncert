@@ -1,0 +1,14 @@
+.thumbnail {
+
+    height: 100%;
+    width: auto;
+
+    border-radius: 50px 5px 5px 50px;
+
+}
+
+.bilet-group {
+    background-color: #86cecb;
+    padding: 8px;
+    border-radius: 50px 5px 5px 50px;
+}

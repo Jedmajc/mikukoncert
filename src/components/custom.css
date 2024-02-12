@@ -1,0 +1,15 @@
+
+
+.btn {
+    background-color: #137a7f;
+    color: white;
+    border: #137a7f;
+}
+
+.btn:hover {
+    background-color: #e12885;
+}
+
+.nav-link:hover {
+    color: #e12885;
+}

@@ -12,6 +12,7 @@ function InfoKomponent() {
                         <p>MIKU KONCERT  to światowa trasa koncertowa organizowana przez Kryptońskie Media, która obejmuje różnorodne wydarzenia towarzyszące (wystawy, warsztaty, wydarzenia klubowe…), podczas których fani ze wszystkich środowisk mogą się spotykać i dzielić się różnymi aspektami otaczającej kultury Miku
                         </p>
                     </div>
+                    <hr/>
                     <div className={"o-miku"}>
                         <h1>Kim jest Miku?</h1>
                         <p>Hatsune Miku to japońska sensacja muzyczna, 16-letnia niebieskowłosa dziewczyna o wyjątkowym głosie i niesamowitej energii.

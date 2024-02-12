@@ -24,7 +24,7 @@ function StartKomponent(){
                         <div className={"krotki-opis"}>
                             <h1><b>MIKU KONCERT</b> to wszystkie koncerty Miku w jednym miejscu</h1>
                         </div>
-                        <Carousel controls={false} indicators={false} interval={8000}>
+                        <Carousel controls={false} indicators={false} interval={10000} defaultActiveIndex={1}>
                             <h4>Opinie uzytkownikow:</h4>
                             {opinie.map((opinia, index) => (
                                 <Carousel.Item key={index}>

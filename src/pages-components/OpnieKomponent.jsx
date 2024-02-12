@@ -10,7 +10,7 @@ function OpnieKomponent(){
             <Row>
                 <Col md={9}>
                     <div className={"opinie-uzytkownikow"}>
-                        <h3>Opinie naszych uzytkownikow:</h3>
+                        <h3>Opinie naszych uzytkownikow: </h3>
                     </div>
                     <div className={"jakas-opinia"}>
                         <Stack gap={5}>

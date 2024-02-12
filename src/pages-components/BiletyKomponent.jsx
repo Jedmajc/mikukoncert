@@ -11,13 +11,18 @@ function BiletyKomponent() {
 
     const [currenBiletId, setCurrentBiletId] = useState(null)
 
+    const handleClick = ({biletId}) => {
+        setCurrentBiletId(biletId)
+        console.log(biletId)
+    }
+
     return(
         <Container className={"main"} fluid>
             <Row>
                 <Col md={9}>
                     <Stack gap={4}>
                         {bilety.map((bilety, index) => (
-                            <Bilet key={index} img={bilety.img} tytul={bilety.tytul} tresc={bilety.tytul} data={bilety.data} opis={bilety.opis} placeholder={<KupBilet handleClick={() => setCurrentBiletId(bilety.id)}/>} />
+                            <Bilet key={index} img={bilety.img} tytul={bilety.tytul} tresc={bilety.tytul} data={bilety.data} opis={bilety.opis} placeholder={<KupBilet handleClick={() => handleClick(bilety.id)}/>} />
                         ))}
                     </Stack>
                 </Col>
